@@ -1,0 +1,69 @@
+/*
+ECE-3600 Specific Note: This file is out of scope for the course, but is included for completeness.
+This file was originally created by Kenneth (Alex) Jenkins, https://github.com/rockenman1234/CatTemplateWebsite.
+*/
+
+
+/* Use a modern font. */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.gallery {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+h3 {
+  margin: 15px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+}
+
+p {
+  margin: 0 15px;
+  font-size: 0.95em;
+  color: #555;
+  text-align: justify;
+}
+
+/* Add responsiveness for smaller screens. */
+@media (max-width: 768px) {
+  .gallery {
+      flex-direction: column;
+      align-items: center;
+  }
+}
