@@ -7,7 +7,7 @@ Georgia Tech ECE-3600: Final Project - Simple HTTP Web Server demo (with Google 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-<img src="/pics/clip.jpg" alt="Clip art" width="200" height="200">
+<img src="/pics/clip.png" alt="Clip art" width="200" height="200">
 
 #### Members: [Kenneth (Alex) Jenkins](https://alexj.io), Alan Aguilar, Emileigh Elwood, Shyra LaGarde, Kenny Dang, Kenneth Aguilar
 #### Professor: [Dr. Chuanyi Ji](https://ece.gatech.edu/directory/chuanyi-ji)
