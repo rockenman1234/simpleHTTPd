@@ -1,0 +1,70 @@
+<!--
+ECE-3600 Specific Note: This file is out of scope for the course, but is included for completeness.
+This file was originally created by Kenneth (Alex) Jenkins.
+Then later modified by Emileigh Elwood, Shyra LaGarde, Kenny Dang, Alan Aguilar, & Kenneth Aguilar.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information: Set character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the Web Page (Displayed in Browser Tab) -->
+    <title>Location Map</title>
+
+    <!-- Favicon (Small Icon in the Browser Tab) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌞</text></svg>">
+
+    <!-- Link to External CSS File for Styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner Section (Displays the title at the top of the page) -->
+    <div class="banner">
+        Georgia Tech Solar Map
+    </div>
+
+    <!-- Grid Container for the Image and Button Elements (Arranged in a 2x2 Grid) -->
+    <div class="grid-container">
+        <!-- Frame Container 1 (Image of Klaus with Open in New Tab Button) -->
+        <div class="frame-container">
+            <img src="./img/klaus.png" alt="klaus" width="150" height="150">
+            <button class="open-link-btn" onclick="openInNewTab('https://sunroof.withgoogle.com/building/33.7772373/-84.39623809999999/#?f=view')">View Solar on Klaus</button>
+        </div>
+
+        <!-- Frame Container 2 (Image of College of Computing with Open in New Tab Button) -->
+        <div class="frame-container">
+            <img src="./img/CoC.png" alt="College of Computing" width="200" height="200">
+            <button class="open-link-btn" onclick="openInNewTab('https://sunroof.withgoogle.com/building/33.7775271/-84.39734229999999/#?f=view')">View Solar on CoC</button>
+        </div>
+
+        <!-- Frame Container 3 (Image of Van Leer Building with Open in New Tab Button) -->
+        <div class="frame-container">
+            <img src="./img/VanLeer.png" alt="Van Leer" width="150" height="150">
+            <button class="open-link-btn" onclick="openInNewTab('https://sunroof.withgoogle.com/building/33.77599970000001/-84.39713309999999/#?f=view')">View Solar on Van Leer</button>
+        </div>
+
+        <!-- Frame Container 4 (Image of Boggs Building with Open in New Tab Button) -->
+        <div class="frame-container">
+            <img src="./img/boggs.png" alt="Boggs" width="150" height="150">
+            <button class="open-link-btn" onclick="openInNewTab('https://sunroof.withgoogle.com/building/33.7757066/-84.39979210000001/#?f=view')">View Solar on Boggs</button>
+        </div>
+    </div>
+
+    <!-- Footer Section (Displays the footer message at the bottom) -->
+    <div class="footer">
+        Made with ❤️ in ATL, GA.
+        <br>
+        For ECE-3600 @ <a href="https://www.ece.gatech.edu" target="_blank">Georgia Tech</a>.
+    </div>
+
+    <!-- JavaScript Function to Open URL in a New Tab -->
+    <script>
+        function openInNewTab(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>

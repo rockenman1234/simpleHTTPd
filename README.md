@@ -1,7 +1,7 @@
 <div align="center">
 
 # simpleHTTPd 
-Georgia Tech ECE-3600: Final Project, Part 1 - Simple HTTP Web Server demo (with Cat website)
+Georgia Tech ECE-3600: Final Project - Simple HTTP Web Server demo (with Google Solar API)
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -24,7 +24,7 @@ ___
 ---
 
 ## 🤔 Project Background 
-This project was developed for Georgia Tech's ECE-3600 course to illustrate the construction of a simple yet secure HTTP web server entirely in Rust. The server is designed to host a minimalist cat-themed website and prioritizes secure, memory-safe handling of HTTP requests. By leveraging only the Rust programming language's standard libraries, particularly `std::net` & `std::io`, the server achieves efficient performance with a compact codebase, while Rust's ownership model inherently provides memory safety and reduces common programming pitfalls.
+This project was developed for Georgia Tech's ECE-3600 course to illustrate the construction of a simple yet secure HTTP web server entirely in Rust, and display data from the Google Solar API with regards to solar energy harvesting on the rooftops of several Georgia Tech buildings. The server is designed to host a minimalist website centered around Georgia Tech buildings, leveraging data procured via the Google Solar API and emphasizing secure, memory-safe handling of HTTP requests. By leveraging only the Rust programming language's standard libraries, particularly `std::net` & `std::io`, the server achieves efficient performance with a compact codebase, while Rust's ownership model inherently provides memory safety and reduces common programming pitfalls.
 
 In 2024, memory safety remains a critical issue in software security, accounting for a substantial portion of bugs and vulnerabilities. For instance, the Chromium project, which underpins the Chrome web browser, [reports that around 70% of its severe security issues arise from memory safety problems](https://www.chromium.org/Home/chromium-security/memory-safety/). This project introduces Rust's advantages in network programming, where safety and reliability are essential. Imagine a world with 70% fewer computer bugs — software would be faster, more stable, and far less vulnerable to attacks!
 
@@ -71,6 +71,13 @@ These resources provide a strong foundation in Rust networking concepts and offe
 
 ___
 
+## ☀️ Google Solar API
+The Google Solar API is a service provided by Google to help developers and businesses integrate solar energy data into their applications or projects. It is part of Google's efforts to encourage the adoption of solar energy by providing accurate solar potential data, particularly for homeowners, solar developers, and energy planners.
+
+One of the most notable solar-related tools provided by Google is Project Sunroof. This project uses satellite imagery and data to calculate the solar potential of rooftops across the United States. It helps homeowners and businesses determine how much solar power they could generate from installing solar panels on their roofs.
+
+---
+
 ## 💻 How to Run:
 0. [Download the Rust compiler for your Operating System](https://www.rust-lang.org/).
 
@@ -91,7 +98,7 @@ ___
 5. Navigate to `localhost:8000` in the web browser of your choosing, and enjoy some cool cat pics!
 
 > [!WARNING]
-> This project is intended to function as a demonstration web server for an academic setting and is not designed for deployment in any serious applications.
+> This project is intended to function as a demonstration web server for an academic setting and could be later designed for deployment in Google Map API specific applications.
 > For a secure, production ready and easy to configure web server - check out the open source [Caddy project](https://caddyserver.com/).
 ___
 ### 🤓 See Also:

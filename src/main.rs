@@ -60,7 +60,7 @@ fn main() {
 
                 // Build the path to the requested resource
                 let mut resource_path = std::path::PathBuf::new();
-                resource_path.push("catSite"); // Base directory for resources
+                resource_path.push("mapSite"); // Base directory for resources
                 resource_path.push(requested_resource.trim_start_matches("/"));
 
                 

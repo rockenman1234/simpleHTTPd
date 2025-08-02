@@ -1,0 +1,85 @@
+/*
+ECE-3600 Specific Note: This file is out of scope for the course, but is included for completeness.
+This file was originally created by Kenneth (Alex) Jenkins.
+Then later modified by Emileigh Elwood, Shyra LaGarde, Kenny Dang, Alan Aguilar, & Kenneth Aguilar.
+*/
+
+/* Reset default margin and padding for all elements */
+* {
+    box-sizing: border-box; /* Ensures consistent box sizing across all elements */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif; /* Use Arial font for all text */
+    display: flex;
+    flex-direction: column; /* Arrange children (banner, grid, footer) vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #fafafa; /* Light gray background */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Banner section at the top of the page */
+.banner {
+    background-color: #003057; /* Blue background */
+    color: white; /* White text */
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add space around the text */
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Bold font */
+}
+
+/* Container for the grid of images and buttons */
+.grid-container {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+    gap: 20px; /* Add space between grid items */
+    padding: 20px; /* Add space around the grid */
+    overflow: hidden; /* Prevent scrolling inside grid */
+    flex: 1; /* Make sure it fills the remaining space */
+}
+
+/* Style for each individual frame containing an image and button */
+.frame-container {
+    display: flex;
+    flex-direction: column; /* Stack the image and button vertically */
+    align-items: center; /* Center-align the content */
+    justify-content: center; /* Center-align the content */
+    background: #fff; /* White background */
+    padding: 20px; /* Add padding inside the frame */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    height: 100%; /* Ensure the container fills its grid cell */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Style for the images within the frame */
+.frame-container img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Round the corners of the image */
+}
+
+/* Style for the button that opens a link in a new tab */
+.open-link-btn {
+    padding: 10px 20px; /* Add space inside the button */
+    font-size: 16px; /* Set the font size */
+    background: #2961FF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Round the button corners */
+    margin-top: 10px; /* Add space above the button */
+}
+
+/* Footer section at the bottom of the page */
+.footer {
+    background-color: #B3A369; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center-align the text */
+    padding: 10px; /* Add space inside the footer */
+    font-size: 14px; /* Smaller font size */
+}
